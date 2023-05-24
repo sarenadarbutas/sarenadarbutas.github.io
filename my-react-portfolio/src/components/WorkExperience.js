@@ -1,24 +1,27 @@
 const WorkExperiences = ({ company, position, date, responsibilities }) => {
   return (
     <div className="work-experiences">
-      <div className="space-y-4 mb-3 mt-7">
-        <h2 className="text-center text-2xl text-orange-600">{company}</h2>
-        <h3 className="text-center text-xl text-orange-700">{position}</h3>
-        <h3 className="text-center text-lg text-orange-800">{date}</h3>
+      <div className="space-y-4 mb-3 mt-7 px-4 lg:px-10 xl:px-20">
+        <h2 className="text-center text-2xl lg:text-3xl text-orange-600">{company}</h2>
+        <h3 className="text-center text-xl lg:text-2xl text-orange-700">{position}</h3>
+        <h3 className="text-center text-lg lg:text-xl text-orange-800">{date}</h3>
       </div>
-      <ul className="list-disc list-inside mx-auto w-max">
-        {responsibilities.map((responsibility) => (
-          <li
-            key={responsibility}
-            className="text-lg mb-3 ml-4 text-orange-900"
-          >
-            {responsibility}
-          </li>
-        ))}
-      </ul>
+      <div className="flex justify-center">
+        <ul className="list-disc list-inside max-w-none">
+          {responsibilities.map((responsibility) => (
+            <li
+              key={responsibility}
+              className="text-lg mb-3 ml-4 text-orange-900 w-full"
+            >
+              {responsibility}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
+
 const WorkExperience = () => {
   const jobExperiencesData = [
     {
@@ -62,15 +65,16 @@ const WorkExperience = () => {
   ];
 
   return (
-    <div className="uork">
-      <div className='content-work'>
-        <h1 className='font-serif text-orange-500 text-4xl mb-2 ml-6 text-center underline decoration-solid'>Work Experiences</h1>
+    <div className="work">
+      <div className="content-work">
+        <h1 className="font-serif text-orange-500 text-4xl mb-2 text-center underline">Work Experiences</h1>
         {jobExperiencesData.map((jobExperience) => (
-        <WorkExperiences key={jobExperience.id} {...jobExperience} />
+          <WorkExperiences key={jobExperience.id} {...jobExperience} />
         ))}
-        </div>
+      </div>
     </div>
   );
 };
+
 
 export default WorkExperience;

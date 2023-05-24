@@ -1,20 +1,19 @@
-const SchoolExperiences = ({ id, projectName, dateOfClass, projectExperiences }) => {
+const SchoolExperiences = ({ projectName, dateOfClass, projectExperiences }) => {
   return (
     <div className="school-experiences">
-      <div className="space-y-4 mb-3 mt-7">
-        <h2 className="text-center text-2xl text-orange-700">{projectName}</h2>
-        <h3 className="text-center text-xl text-orange-800">{dateOfClass}</h3>
+      <div className="space-y-4 mb-3 mt-7 px-4 lg:px-10 xl:px-20">
+        <h2 className="text-center text-2xl lg:text-3xl text-orange-700">{projectName}</h2>
+        <h3 className="text-center text-xl lg:text-2xl text-orange-800">{dateOfClass}</h3>
       </div>
-      <ul className="list-disc list-outside mx-auto w-max">
+      <div className="flex justify-center">
+      <ul className="list-disc list-inside max-w-none">
         {projectExperiences.map((experience) => (
-          <li
-            key={experience}
-            className="text-lg mb-3 ml-4 text-orange-900"
-          >
+          <li key={experience} className="text-lg mb-3 ml-4 text-orange-900 w-full">
             {experience}
           </li>
         ))}
       </ul>
+    </div>
     </div>
   );
 };
@@ -60,9 +59,11 @@ const EducationalExperiences = () => {
   ];
 
   return (
-    <div className='school'>
-      <div className='school-content'>
-        <h1 className='font-serif text-orange-500 text-4xl mb-2 ml-6 text-center underline decoration-solid mt-10'>Academic Projects</h1>
+    <div className="school">
+      <div className="school-content">
+        <h1 className="font-serif text-orange-500 text-4xl mb-2 mt-3 text-center underline">
+          Academic Projects
+        </h1>
         {educationExperienceData.map((experienceData) => (
           <SchoolExperiences key={experienceData.id} {...experienceData} />
         ))}
