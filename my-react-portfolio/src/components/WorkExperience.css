@@ -1,0 +1,6 @@
+.bullet {
+    display: inline-block;
+    width: 1em;
+    text-align: left;
+    margin-right: 0.5em;
+  }
