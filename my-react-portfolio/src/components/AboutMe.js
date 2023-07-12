@@ -1,52 +1,32 @@
+import pc from '../img/pcbuild.jpg';
+
+
+
 const AboutMe = () => {
+
     return (
       <div className="about-me">
-        <div className="content-me">
-          <h1 className="font-serif text-orange-500 text-5xl mb-2 ml-6 text-center lg:text-left">
-            Sarena Darbutas
-          </h1>
-          <h1 className="font-serif text-orange-500 text-2xl mb-2 ml-6 text-center lg:text-left">
-            Entry Level Software Engineer
-          </h1>
-          <p className="font-serif text-orange-400 text-xl mt-2 mb-6 ml-6 text-center lg:text-left">
-            Seeking a rewarding opportunity to apply my knowledge and skills.
-          </p>
-  
-          <h2 className="font-serif text-orange-500 text-lg mt-6 ml-6 text-center lg:text-left">
-            University of Wisconsin Parkside
-          </h2>
-          <h2 className="font-serif text-orange-500 text-lg mt-2 ml-6 text-center lg:text-left">
-            Bachelor in Science Computer Science
-          </h2>
-          <h3 className="font-serif text-orange-300 text-base mt-2 ml-6 text-center lg:text-left">
-            Kenosha, Wisconsin
-          </h3>
-          <h3 className="font-serif text-orange-300 text-base mt-2 mb-6 ml-6 text-center lg:text-left">
-            Graduated: May 13th, 2023
-          </h3>
-          <h4 className="font-serif text-orange-500 text-base ml-6 text-center lg:text-left">
-            Relevant Coursework:
-          </h4>
-          <h4 className="font-serif text-orange-300 text-base mt-2 mb-6 ml-6 text-center lg:text-left">
-            Data Structures and Algorithm Design, Operating Systems, Database Management Systems, Computer Communication and Networks, Web Application Security, Computer Architecture, Software Engineering Principles and Practices, Introduction to Data Science
-          </h4>
-  
-          <h4 className="font-serif text-orange-500 text-base ml-6 text-center lg:text-left">
-            Programming Languages and Database:
-          </h4>
-          <h4 className="font-serif text-orange-300 text-base mt-2 mb-6 ml-6 text-center lg:text-left">
-            Java, Javascript, Python, HTML, CSS, MYSQL, NOSQL, Firebase
-          </h4>
-  
-          <h4 className="font-serif text-orange-500 text-base ml-6 text-center lg:text-left">
-            Tools & Frameworks:
-          </h4>
-          <h4 className="font-serif text-orange-300 text-base mt-2 mb-6 ml-6 text-center lg:text-left">
-            NodeJS, VueJS, ReactJS, Git, Flask, Jira
-          </h4>
+        <div className="flex flex-col md:flex-row relative">
+          <section className="p-4 flex flex-col justify-center items-center md:w-1/2">
+            <h1 className="text-orange-800 text-4xl mb-20 mt-10 md:mb-14">About Me</h1>
+            <div className="border border-orange-800 bg-white text-black p-4">
+              <p>
+                Recent College Graduate whose love of programming stemmed from my passion for video games at a young age. I was consistently curious about the how, what, where, and why of the beauty when playing games, which led me to pursue a Bachelor's Degree in Computer Science.
+              </p>
+            </div>
+          </section>
+          <section className="flex-grow flex justify-end mt-16 mb-16 mr-5 xl:mt-22">
+            <div className="w-full flex justify-center">
+              <img
+                src={pc}
+                alt="pc build"
+                className="object-contain h-72"
+              />
+            </div>
+          </section>
         </div>
+        <div className="horizontal-line bg-orange-500 h-1 md:h-2 lg:h-3 mt-10"></div>
       </div>
     );
   };
-  
-  export default AboutMe;
+export default AboutMe;
