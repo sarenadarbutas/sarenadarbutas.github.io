@@ -1,27 +1,49 @@
-import { FaEnvelope, FaPhone, FaMapMarker } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarker } from "react-icons/fa";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
   return (
     <div className="contact-me">
-      <div className="flex flex-col md:flex-row relative">
-        <section className="p-4 md:w-1/2 flex flex-col items-center">
-          <h1 className="text-orange-800 text-4xl mb-20 mt-5 md:mb-14">Contact me</h1>
-          <div className="flex items-center mb-4">
-            <FaEnvelope className="mr-2 text-orange-800" />
-            <span>Email: sarenadarbutas@gmail.com</span>
+      <div className="flex flex-col bg-orange-400">
+        <footer className="p-1 flex flex-col sm:flex-row">
+          <div className="w-full sm:w-1/2 flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center">
+              <h1 className="text-orange-800 text-2xl mb-2">Contact me</h1>
+              <div className="flex items-center mb-2">
+                <FaEnvelope className="mr-2 text-orange-800" />
+                <span className="text-white">sarenadarbutas@gmail.com</span>
+              </div>
+              <div className="flex items-center">
+                <FaMapMarker className="mr-2 text-orange-800" />
+                <span className="text-white">Kenosha, Wisconsin</span>
+              </div>
+            </div>
           </div>
-          <div className="flex items-center mb-4">
-            <FaPhone className="mr-2 text-orange-800" />
-            <span>Phone: +1 262 577 1118</span>
+          <div className="w-full sm:w-1/2 flex flex-col items-center justify-center mt-4 sm:mt-0">
+            <div className="flex flex-col items-center">
+              <h1 className="text-orange-800 text-2xl mb-2">Socials</h1>
+              <div className="flex items-center mb-2">
+                <AiFillGithub className="mr-2 text-orange-800" />
+                <a
+                  href="https://github.com/sarenadarbutas"
+                  className="text-white"
+                >
+                  Github
+                </a>
+              </div>
+              <div className="flex items-center">
+                <AiFillLinkedin className="mr-2 text-orange-800" />
+                <a
+                  href="https://www.linkedin.com/in/sarena-darbutas/"
+                  className="text-white"
+                >
+                  LinkedIn
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="flex items-center">
-            <FaMapMarker className="mr-2 text-orange-800" />
-            <span>Location: Kenosha, Wisconsin</span>
-          </div>
-        </section>
+        </footer>
       </div>
-      
-      <div className="horizontal-line bg-orange-500 h-1 md:h-2 lg:h-3 mt-10"></div>
     </div>
   );
 };

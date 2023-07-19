@@ -1,18 +1,15 @@
 import { Link } from "react-scroll";
 
 const NavBar = () => {
-
   return (
-    <div className="bg-orange-400 py-3 flex justify-between px-3">
+    <div className="bg-orange-400 py-3 flex flex-wrap justify-between px-3">
       <div>
-        <h1 className="Menlo text-white text-lg mt-1 lg:text-2xl md:text-xl">
+        <h1 className="Menlo text-white text-lg lg:text-2xl md:text-xl xs:text-base">
           Sarena Darbutas
         </h1>
       </div>
-      <nav className="navbar Menlo text-white text-lg mb-2 flex justify-end lg:text-2xl md:text-xl">
-        <header className="flex gap-8">
-          <h1 className="mt-1 hover:text-gray-400">
-          </h1>
+      <nav className="navbar Menlo text-white text-lg flex justify-end lg:text-2xl md:text-xl xs:text-base xs:px-1">
+        <header className="flex flex-wrap gap-8">
           <Link
             to="about-me"
             smooth={true}

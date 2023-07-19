@@ -35,8 +35,8 @@ const Popup = () => {
         >
           <FaTimes className="h-5 w-5" />
         </button>
-        <h1 className="text-2xl font-bold mb-4">Welcome to my portfolio website!</h1>
-        <p>
+        <h1 className="Advent Pro text-2xl font-bold mb-4">Welcome to my portfolio website!</h1>
+        <p className="Merriweather"> 
             I created this website using JavaScript, HTML5, NodeJS, and Tailwind a CSS library.
             I was not familar with Tailwind at the beginning of this project, but
             I wanted to showcase my ability to learn new technologies quickly and succeed with them.

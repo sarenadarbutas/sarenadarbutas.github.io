@@ -31,7 +31,7 @@ const scrollToTop = () => {
 function App() {
   return (
     <Router>
-        <div className="App bg-orange-100 smooth">
+        <div className="App bg-orange-100 smooth xs:bg-orange-100">
           <div className="content">
             <NavBar />
             <Routes>

@@ -8,7 +8,7 @@ const AboutMe = () => {
       <div className="about-me">
         <div className="flex flex-col md:flex-row relative">
           <section className="p-4 flex flex-col justify-center items-center md:w-1/2">
-            <h1 className="text-orange-800 text-4xl mb-20 mt-10 md:mb-14">About Me</h1>
+            <h1 className="text-orange-800 text-4xl md:mb-14 sm:mb-10">About Me</h1>
             <div className="border border-orange-800 bg-white text-black p-4">
               <p>
                 Recent College Graduate whose love of programming stemmed from my passion for video games at a young age. I was consistently curious about the how, what, where, and why of the beauty when playing games, which led me to pursue a Bachelor's Degree in Computer Science.

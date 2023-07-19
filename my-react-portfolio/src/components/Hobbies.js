@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import brown1 from "../img/brown1.jpg";
 import steelhead2 from "../img/steelhead2.jpg";
 import brown3 from "../img/brown3.jpg";
