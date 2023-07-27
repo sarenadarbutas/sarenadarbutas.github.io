@@ -7,11 +7,11 @@ const AboutMe = () => {
     return (
       <div className="about-me">
         <div className="flex flex-col md:flex-row relative">
-          <section className="p-4 flex flex-col justify-center items-center md:w-1/2">
-            <h1 className="text-orange-800 text-4xl md:mb-14 sm:mb-10">About Me</h1>
+          <section className="p-4 flex flex-col justify-center items-center md:w-1/2 md:mb-14">
+            <h1 className="text-orange-800 text-4xl md:mb-10 sm:mb-10">About Me</h1>
             <div className="border border-orange-800 bg-white text-black p-4">
               <p>
-                Recent College Graduate whose love of programming stemmed from my passion for video games at a young age. I was consistently curious about the how, what, where, and why of the beauty when playing games, which led me to pursue a Bachelor's Degree in Computer Science.
+              I recently graduated from the University of Wisconsin Parkside with a Bachelor's of Science in Computer Science. Throughout my studies, I developed a deep interest in the process of turning ideas into real applications. This specifically interested me because of my passion for video games that started at a young age. I wanted to know how these games came to life, which ultimately made me decide to get my degree in Computer Science. 
               </p>
             </div>
           </section>

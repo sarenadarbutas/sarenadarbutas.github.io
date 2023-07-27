@@ -30,7 +30,7 @@ const Skills = () => {
             <h1 className="text-orange-800 text-4xl mb-28 md:mb-8 sm:mb-7 xs:mb-5">Skills</h1>
             <div className="border border-orange-800 bg-white text-black p-4">
               <p>
-                During my time in college, I stumbled upon web development, I instantly fell head over heels for it. It was during my internship that things really took off and I got to level up my skills with Vue and React. When it comes to the techie stuff, I'm comfortable with JavaScript, HTML, CSS, and Python. They're like my trusty pals that always have my back when it comes to bringing my ideas to life. I also have experience with the Databases of MYSQL, NOSQL, and Firebase.
+              In college, I applied for internships in my junior year. Foxconn Industrial Internet offered me a Full Stack Engineer internship, where I discovered my love for Frontend Software Engineering. Throughout the rest of my time there, they allowed me to switch to a frontend developer where I honed these skills, gaining valuable experience and clarity about my career path. Foxconn laid a solid foundation for my journey ahead.
               </p>
             </div>
           </section>
